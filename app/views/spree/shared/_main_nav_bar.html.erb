@@ -1,4 +1,6 @@
-<nav class="col-md-12">
+<%
+=begin%>
+ <nav class="col-md-12">
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
       <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
@@ -12,5 +14,20 @@
       </li>
       <script>Spree.fetch_cart()</script>
     </ul>
+  </div>
+</nav> 
+<%
+=end%>
+
+
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <ul>
+        <li id="home-link" data-hook>
+          <%= link_to Spree.t(:home), spree.root_path, :class => 'no-hover' %>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
