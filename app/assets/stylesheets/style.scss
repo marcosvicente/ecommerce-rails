@@ -13,8 +13,10 @@
 @import "components/global";
 // @import "components/badges";
 // @import "components/icons-material-design";
-// @import "components/grid";
+@import "components/grid";
 @import "components/navbar";
+@import "components/header";
+
 // @import "components/typography";
 // @import "components/transitions";
 // @import "components/cards";
@@ -28,7 +30,7 @@
 // @import "components/collapsible";
 // @import "components/chips";
 // @import "components/materialbox";
-// @import "components/forms/forms";
+@import "components/form";
 // @import "components/table_of_contents";
 @import "components/sidenav";
 // @import "components/preloader";

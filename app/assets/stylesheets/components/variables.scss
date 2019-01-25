@@ -25,13 +25,14 @@
 //  22. Flow Text
 //  23. Collections
 //  24. Progress Bar
+//  25. Header
 
 
 
 // 1. Colors
 // ==========================================================================
 
-$primary-color: color("black", "lighten-2") !default;
+$primary-color: #a40000 !default;
 $primary-color-light: color("red", "lighten-2") !default;
 $primary-color-dark: color("red", "lighten-2") !default;
 
@@ -164,13 +165,13 @@ $input-height: 3rem !default;
 $input-border-color: color("grey", "base") !default;
 $input-border: 1px solid $input-border-color !default;
 $input-background: #fff !default;
-$input-error-color: $error-color !default;
-$input-success-color: $success-color !default;
-$input-focus-color: $secondary-color !default;
-$input-font-size: 16px !default;
+$input-error-color: transparent !default;
+$input-success-color: transparent !default;
+$input-focus-color: transparent !default;
+$input-font-size: 1.6rem !default;
 $input-margin-bottom: 8px;
 $input-margin: 0 0 $input-margin-bottom 0 !default;
-$input-padding: 0 !default;
+$input-padding: 0.8rem !default;
 $label-font-size: .8rem !default;
 $input-disabled-color: rgba(0,0,0, .42) !default;
 $input-disabled-solid-color: #949494 !default;
@@ -245,7 +246,7 @@ $navbar-height-mobile: 56px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1.4rem !default;
 $navbar-font-color: #fff !default;
-$navbar-brand-font-size: 2.1rem !default;
+$navbar-brand-font-size: 4rem !default;
 
 // 14. Side Navigation
 // ==========================================================================
@@ -344,3 +345,11 @@ $collection-line-height: 1.5rem !default;
 // ==========================================================================
 
 $progress-bar-color: $secondary-color !default;
+
+
+// 25. Header
+// ==========================================================================
+
+$header-font-color: #fff;
+$header-brand-font-size: 4rem;
+

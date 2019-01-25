@@ -2,10 +2,24 @@
   <header id="header" data-hook>
     <div class="container">
       <div class="row">
-        <figure id="logo" class="col-md-4 col-sm-3" data-hook>
-          <%= logo %>
-        </figure>
-        <%= render partial: 'spree/shared/nav_bar' %>
+        <div class="col m2 ">
+          <%= render partial: 'spree/shared/logo' %>
+        </div>
+        <div class="col m6">
+          <%= render partial: 'spree/shared/search' %>
+        </div>
+        <div class="col m2">
+                    <%= render partial: 'spree/shared/login_button' %>
+
+        </div>
+        <div class="col m2">
+          <div class="header-cart">
+            <i class="material-icons">
+            shopping_cart
+            </i>
+          </div>
+        </div>
+
       </div>
     </div>
   </header>

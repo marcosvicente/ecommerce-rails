@@ -1,4 +1,6 @@
-<% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
+<%
+=begin%>
+ <% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
 <%= form_tag spree.products_path, method: :get, class: "navbar-form" do %>
   <div class="form-group">
     <% cache [I18n.locale, @taxons] do %>
@@ -12,4 +14,10 @@
     <%= search_field_tag :keywords, params[:keywords], placeholder: Spree.t(:search), class: "form-control" %>
   </div>
   <%= submit_tag Spree.t(:search), name: nil, class: "btn btn-success" %>
-<% end %>
+<% end %> 
+<%
+=end%>
+
+<div class="input-field">
+  <input  placeholder="O que você deseja buscar?" type="text" style="margin-top:10px;">
+</div>
